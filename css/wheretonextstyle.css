@@ -1,0 +1,246 @@
+html {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    position: relative;
+    min-height: 100vh;
+    padding: 0;
+    overflow: hidden;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    text-transform: uppercase;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-weight: bolder;
+  border-bottom: 1px solid #cce6ff;
+  align-items: center;
+  justify-content: center;
+}
+
+h4 {
+  padding-bottom: 5%;
+  padding-top: 2%;
+}
+
+/*title animation*/
+.wordCarousel{
+   font-weight: 100;
+}
+
+.wordCarousel:after{
+   content:"";
+   display: block;
+   width: 100%;
+   position: absolute;
+   z-index: -1;
+   transform: rotate(20deg);
+   border-radius: 50%;
+}
+
+.home-title{
+   overflow: hidden;
+   position: relative;
+   height: 65px;
+   padding-top: 10px;
+   margin-top: -10px;
+   padding-left: 35%;
+}
+
+.home-title span{
+  float: left;
+}
+
+.flip4 li {
+   font-weight: 700;
+   height: 45px;
+   margin-bottom: 45px;
+   display: block;
+}
+
+.flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip3 { animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+@keyframes flip2 {
+    0% { margin-top: -180px; }
+    5% { margin-top: -90px;  }
+    50% { margin-top: -90px; }
+    55% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+@keyframes flip3 {
+    0% { margin-top: -270px; }
+    5% { margin-top: -180px; }
+    33% { margin-top: -180px; }
+    38% { margin-top: -90px; }
+    66% { margin-top: -90px; }
+    71% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+@keyframes flip4 {
+    0% { margin-top: -360px; }
+    5% { margin-top: -270px; }
+    25% { margin-top: -270px; }
+    30% { margin-top: -180px; }
+    50% { margin-top: -180px; }
+    55% { margin-top: -90px; }
+    75% { margin-top: -90px; }
+    80% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+// Layout //////////////////////////////////////////
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Oswald);
+/*title animation ends*/
+
+/*destionation hover effect*/
+.destination {
+  border-bottom: 1px ridge;
+}
+
+.destination img {
+  border-radius:5%;
+  transition:box-shadow .3s;
+  border: 1px solid #ccc;
+  background: #fff;
+
+}
+
+.destination img:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.4);
+}
+
+/*destination hover effect ends*/
+
+
+
+/*footer*/
+footer {
+  border-radius: 5px;
+  text-align: center;
+  width:100%;
+  height: 100px;
+  position:absolute;
+  padding-top: 10px;
+
+}
+
+footer, .push {
+  height: 100px;
+}
+
+footer a {
+  color: #000000;
+}
+
+footer a:hover {
+  color: #33adff;
+}
+
+/*footer ends*/
+
+/* nav bar */
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#home {
+  top: 20px;
+  background-color: #4CAF50;
+}
+
+#travel {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#study {
+  top: 140px;
+  background-color: #f44336;
+}
+/* nav bar */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin: 5px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .home-title {
+    padding-bottom: 15%;
+  }
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .destination {
+    margin-left: 15%;
+  }
+
+  .video-title {
+    margin-left: 3%;
+  }
+
+  #shimmer {
+    margin-left: 10%;
+  }
+}
