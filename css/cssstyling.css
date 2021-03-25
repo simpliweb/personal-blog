@@ -1,9 +1,7 @@
 html {
-  height: 100%;
-  bottom: 0;
+  height: auto;
 }
 main {
-  height: 100vh;
   position: relative;
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
@@ -25,7 +23,7 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 2.8em;
+  font-size: 2.8rem;
   font-weight: bolder;
   border-bottom: 1px solid #cce6ff;
 }
@@ -46,6 +44,7 @@ footer {
   height: 100px;
   position:absolute;
   padding-top: 10px;
+  margin-top: 5%;
 }
 
 footer, .push {
@@ -164,4 +163,30 @@ footer a:hover {
 
 .active, .dot:hover {
   background-color: #717171;
+}
+/*add responsiveness*/
+/* Small devices (landscape phones, 576px)*/
+@media (max-width: 576px) {
+  h1{
+    font-size: 1.5rem;
+  }
+
+  html,body {
+   height: 100%;
+   position: relative;
+  }
+
+  .slideshow-container {
+   min-height: 100%; /* will cover the 100% of viewport */
+   overflow: hidden;
+   display: block;
+   position: relative;
+   padding-bottom: 100px; /* height of your footer */
+  }
+
+  footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+  }
 }
