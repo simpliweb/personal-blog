@@ -103,26 +103,10 @@ footer a:hover {
 /* nav bar ends */
 
 /*articles*/
-.article-container {
-  padding-bottom: 20px;
-  clear: both;
-}
 
-.flex-container {
-  display: inline-flex;
-}
-
-.flex-child {
-  flex: 1;
-}
-
-.flex-child:first-child {
-  margin-right: 500px;
-
-}
-
-.flex-container2 {
+.row-content {
   background-color: #cce6ff;
+  margin-bottom: 5%;
 }
 
 /*articles end*/
@@ -134,183 +118,35 @@ footer a:hover {
   width: 100%;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width:500px) and (max-width: 768px) {
-  .flex-child svg {
-    width: 100%;
-    min-width: 415px;
-    height: 300px;
-    margin-top: 5% !important;
-    margin-bottom: 30% !important;
-    margin-left: -73px !important;
-    padding-top: 7% !important;
+/* Small devices (landscape phones, 576px) */
+@media (max-width: 576px) {
+
+  h1{
+    font-size: 1.8rem;
+  }
+
+  html,body {
+   height: 100%;
+   position: relative;
   }
 
   #artcicle-information {
-    width: 100%;
-    max-width: 427px;
-    margin-top: 87%;
-    margin-left: -495px;
-    margin-right: 10px !important;
-    padding-top: 10% !important;
-  }
-
-  .flex-child:first-child {
-    clear: both;
-  }
-
-  .flex-child2 img {
-    width: 100%;
-    min-width: 415px;
-    height: 300px;
-    margin-left: -245px !important;
-    margin-top: -1050px !important;
-    margin-bottom: 200px;
-    padding-top: -10%;
+    margin-left: 8%;
+    padding-bottom: 8%;
   }
 
   #artcicle-information2 {
-    width: 100%;
-    max-width: 300px;
-    padding-right: 0px !important;
-    margin-left: 15% !important;
-    margin-top: 400px !important;
-    margin-bottom: 25px;
+    margin-bottom: -17% !important;
   }
-
-  .flex-child3 img {
-    width: 100%;
-    min-width: 350px;
-    height: 300px;
-    margin-left: -20%;
-    margin-top: -2%;
-  }
-
   #artcicle-information3 {
-    max-width: 300px;
-    margin-left: -23px !important;
-    margin-top: 20% !important;
+    margin-left: 8%;
+    margin-top: -17% !important;
+    margin-bottom: 5%;
+    padding-right: 17% !important;
   }
+
 }
 
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 769px) and (max-width:992px) {
-  .flex-child svg {
-    width: 100%;
-    min-width: 390px;
-    height: 300px;
-    margin-top: 5% !important;
-    margin-bottom: 0% !important;
-    margin-left: -42% !important;
-    padding-top: 7% !important;
-  }
 
-  #artcicle-information {
-    width: 100%;
-    max-width: 427px;
-    margin-left: -37%;
-    margin-right: 17px !important;
-    padding-bottom: 0% !important;
-  }
-
-  .flex-child:first-child {
-    clear: both;
-  }
-
-  .flex-child2 img {
-    width: 100%;
-    min-width: 380px;
-    height: 300px;
-    margin-left: -25% !important;
-    margin-top: -300px !important;
-    margin-bottom: 100px;
-    padding-top: -10%;
-  }
-
-  #artcicle-information2 {
-    width: 100%;
-    max-width: 300px;
-    padding-right: 0px !important;
-    margin-left: 3% !important;
-    margin-top: 40px !important;
-    margin-bottom: 5px;
-  }
-
-  .flex-child3 img {
-    width: 100%;
-    min-width: 350px;
-    height: 300px;
-    margin-left: -45%;
-    margin-top: 2%;
-  }
-
-  #artcicle-information3 {
-    max-width: 300px;
-    margin-left: 65% !important;
-    margin-top: -88% !important;
-    margin-right: -30%;
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 993px) and (max-width: 1500px) {
-  .flex-child svg {
-    width: 100%;
-    min-width: 390px;
-    height: 300px;
-    margin-top: 5% !important;
-    margin-bottom: 0% !important;
-    margin-left: -34% !important;
-    padding-top: 3% !important;
-  }
-
-  #artcicle-information {
-    width: 100%;
-    max-width: 427px;
-    margin-top: 3%;
-    margin-left: -37%;
-    margin-right: 15px !important;
-    padding-bottom: 0% !important;
-  }
-
-  .flex-child:first-child {
-    clear: both;
-  }
-
-  .flex-child2 img {
-    width: 100%;
-    min-width: 380px;
-    height: 300px;
-    margin-left: -12% !important;
-    margin-top: -300px !important;
-    margin-bottom: 100px;
-    padding-top: 10%;
-  }
-
-  #artcicle-information2 {
-    width: 100%;
-    max-width: 300px;
-    padding-right: 0px !important;
-    margin-left: 10% !important;
-    margin-top: 40px !important;
-    margin-bottom: 45px;
-  }
-
-  .flex-child3 img {
-    width: 100%;
-    max-width: 390px;
-    height: 300px;
-    margin-left: -36%;
-    margin-top: 2%;
-    margin-bottom: 23%;
-  }
-
-  #artcicle-information3 {
-    max-width: 300px;
-    margin-left: 67% !important;
-    margin-top: -88% !important;
-    margin-right: -30%;
-  }
-}
   /* For desktop: */
