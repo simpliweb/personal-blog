@@ -179,6 +179,9 @@ footer a:hover {
   h1 {
     font-size: 1.8rem;
   }
+  main{
+    margin-top: 15%;
+  }
   #travel-image {
     margin-top: 7%;
   }
