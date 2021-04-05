@@ -33,8 +33,7 @@ body {
 h1 {
   font-weight: bolder;
   border-bottom: 1px solid #cce6ff;
-  align-items: center;
-  justify-content: center;
+  padding-bottom: 1%;
 }
 
 h4 {
@@ -60,14 +59,16 @@ h4 {
 .home-title{
    overflow: hidden;
    position: relative;
-   height: 65px;
+   height: 100px;
    padding-top: 10px;
    margin-top: -10px;
-   padding-left: 35%;
+   padding-left: 15%;
+   padding-right: 5%;
 }
 
 .home-title span{
   float: left;
+  margin-left: 15%;
 }
 
 .flip4 li {
@@ -222,25 +223,19 @@ footer a:hover {
 
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .home-title {
-    padding-bottom: 15%;
+@media (max-width: 576px) {
+  .destination{
+    font-size: 1.8rem !important;
   }
-
-  .column {
-    flex: 100%;
-    max-width: 100%;
+  .home-title span {
+    margin-left:-1%;
   }
-
-  .destination {
-    margin-left: 15%;
+  .video-title p {
+    font-size: 1rem !important;
   }
-
-  .video-title {
-    margin-left: 3%;
-  }
-
-  #shimmer {
-    margin-left: 10%;
+  #singapore ul li {
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding-right: 30px;
   }
 }
