@@ -125,6 +125,10 @@ footer a:hover {
     font-size: 1.8rem;
   }
 
+  main{
+    margin-top: 15%;
+  }
+
   html,body {
    height: 100%;
    position: relative;
