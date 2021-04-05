@@ -17,7 +17,6 @@
   </head>
 
   <body>
-    <header>
       <div class="navbar">
         <div id="mySidenav" class="sidenav">
           <a href="index.html" id="home">Home</a>
@@ -25,9 +24,9 @@
           <a href="study.html" id="study">Study</a>
         </div>
       </div>
-    </header>
 
-    <h1 class="wordCarousel text-uppercase pt-5 pb-5">
+
+    <h1 class="wordCarousel col-12 offset-md-2 col-md-8 text-uppercase pt-5">
       <div class="home-title">
         <span>Where to next: </span>
           <!-- Use classes 2,3, or 4 to match the number of words -->
@@ -51,9 +50,11 @@
           <div class="video-title col-12 col-sm-6 pt-3">
             <h5 style="font-weight:700;"> To South Korea <i class="fas fa-plane"></i> </h5>
             <p> Bucket list
-              <li> Visit Jesu Island </li>
-              <li> Makeup shopping </li>
-              <li> Eat street food and popular restaurants </li>
+              <ul>
+                <li> Visit Jesu Island </li>
+                <li> Makeup shopping </li>
+                <li> Eat street food and popular restaurants </li>
+              </ul>
             </p>
           </div>
         </div>
@@ -66,12 +67,14 @@
               <img src="img/wheretonext/singap.jpg" style="width:300px;height:200px;" alt="skydiving on top of beach">
             </a>
           </div>
-          <div class="video-title col-12 col-sm-6 pt-3">
+          <div class="video-title col-12 col-sm-6 pt-3" id="singapore">
             <h5 style="font-weight:700;"> <i class="fas fa-plane"></i> To Singapore </h5>
             <p> Bucket list
-              <li> Observe the orangutans at Singapore Zoo </li>
-              <li> Take a trip to the wild side at River Safari </li>
-              <li> Explore the island via the Coast-to-Coast (C2C) Trail </li>
+              <ul>
+                <li> Observe the orangutans at Singapore Zoo </li>
+                <li> Take a trip to the wild side at River Safari </li>
+                <li> Explore the island via the Coast-to-Coast (C2C) Trail </li>
+              </ul>
             </p>
           </div>
         </div>
@@ -107,9 +110,11 @@
           <div class="video-title col-12 col-sm-6 pt-3">
             <h5 style="font-weight:700;"> <i class="fas fa-plane"></i> To California </h5>
             <p> Bucket list
-              <li> Go to Disneyland </li>
-              <li> Swim at the Venice Beach </li>
-              <li> Visit Redwood National Park </li>
+              <ul>
+                <li> Go to Disneyland </li>
+                <li> Swim at the Venice Beach </li>
+                <li> Visit Redwood National Park </li>
+              </ul>
             </p>
           </div>
         </div>
@@ -123,7 +128,7 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container d-none d-sm-block">
         <div class="row mt-5 pb-3">
           <div class="column">
             <img src="img/wheretonext/southkorea1.jpg">
